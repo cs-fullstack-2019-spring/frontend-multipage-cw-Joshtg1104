@@ -1,0 +1,42 @@
+body{
+    background-color: red;
+}
+
+.container{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-gap: 0;
+
+    grid-template-areas:
+            "section section section section"
+            "content content content content"
+            "footer footer footer footer";
+}
+
+#section{
+    grid-area: section;
+}
+
+article{
+    color: white;
+    font-size: 80px;
+    margin: 10% 10%;
+    grid-area: content;
+}
+footer{
+    grid-area: footer;
+}
+section{
+    font-size: 35px;
+   background: white;
+}
+footer{
+    text-align: left;
+    background-color: white;
+}
+p{
+    margin-top: 4%;
+}
+
